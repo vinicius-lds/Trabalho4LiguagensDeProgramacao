@@ -8,5 +8,7 @@ namespace Trabalho4
 {
     class Banco
     {
+        private 
+
     }
 }
