@@ -1,1 +1,4 @@
 E:\BCC\Trabalho4\Trabalho4\bin\Debug\Trabalho4.exe.config
+E:\BCC\Trabalho4\Trabalho4\obj\Debug\Trabalho4.csprojResolveAssemblyReference.cache
+E:\BCC\Trabalho4\Trabalho4\obj\Debug\Trabalho4.Properties.Resources.resources
+E:\BCC\Trabalho4\Trabalho4\obj\Debug\Trabalho4.csproj.GenerateResource.Cache
