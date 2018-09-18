@@ -49,7 +49,11 @@
     <Compile Include="Banco.cs" />
     <Compile Include="ContaPessoaJuridica.cs" />
     <Compile Include="ContaBase.cs" />
+<<<<<<< HEAD
     <Compile Include="Transacao.cs" />
+=======
+    <Compile Include="Mes.cs" />
+>>>>>>> ff9af12c0502b397f5195ab381977da778e9768c
     <Compile Include="Pessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
