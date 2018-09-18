@@ -2,3 +2,7 @@ E:\BCC\Trabalho4\Trabalho4\bin\Debug\Trabalho4.exe.config
 E:\BCC\Trabalho4\Trabalho4\obj\Debug\Trabalho4.csprojResolveAssemblyReference.cache
 E:\BCC\Trabalho4\Trabalho4\obj\Debug\Trabalho4.Properties.Resources.resources
 E:\BCC\Trabalho4\Trabalho4\obj\Debug\Trabalho4.csproj.GenerateResource.Cache
+C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\obj\Debug\Trabalho4.csprojResolveAssemblyReference.cache
+C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\obj\Debug\Trabalho4.Properties.Resources.resources
+C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\obj\Debug\Trabalho4.csproj.GenerateResource.cache
+C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\obj\Debug\Trabalho4.csproj.CoreCompileInputs.cache
