@@ -9,20 +9,35 @@ namespace Trabalho4
     class Banco
     {
         private List<ContaBase> contas { get; }
+        public static int index = 0;
 
         public int addConta(String nome, DateTime dataNascimento)
         {
-            return 1;
+            ContaBase.numeroConta += 1;
+            this.contas.Insert(ContaBase.numeroConta, new ContaPessoaJuridica(nome, dataNascimento));
+
+            Console.Write("Criado conta PJ");
+
+            return ContaBase.numeroConta;
         }
 
         public int addConta(String nome, DateTime dataNascimento, Mes mesConta)
         {
-            return 1;
+            ContaBase.numeroConta += 1;
+            this.contas.Insert(ContaBase.numeroConta, new ContaPessoaFisica(nome, dataNascimento, mesConta));
+   
+            Console.Write("Criado conta PF");
+
+            return ContaBase.numeroConta;
         }
 
         public String listarContas()
         {
-            return null;
+            String lista = "Contas: \n";
+            foreach(ContaBase c in this.contas){
+                lista += c.ToString()+"\n";
+            }
+            return lista;
         }
 
         public bool saque(int numeroConta, float valorSaque, out float taxa)

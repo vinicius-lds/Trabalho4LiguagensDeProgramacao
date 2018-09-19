@@ -10,16 +10,16 @@ namespace Trabalho4
     {
         private Pessoa pessoa { get; }
         private float saldo { get; }
-        private int numeroConta { get; }
+        public static int numeroConta { get; set;}
 
         public ContaBase(String nome, DateTime dataNascimento)
         {
-
+            this.pessoa = new Pessoa(nome, dataNascimento);
         }
 
         public override String ToString()
         {
-            return null;
+            return this.pessoa.ToString() + " | Conta: " + numeroConta + " | Saldo: " + this.saldo;
         }
     }
 }

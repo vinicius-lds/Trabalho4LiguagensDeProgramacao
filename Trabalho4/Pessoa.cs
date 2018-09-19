@@ -16,5 +16,11 @@ namespace Trabalho4
             this.dataNascimento = dataNascimento;
             this.nome = nome;
         }
+
+
+        public override String ToString()
+        {
+            return "Nome: " + this.nome + " | Data Nascimento: " + this.dataNascimento;
+        }
     }
 }
