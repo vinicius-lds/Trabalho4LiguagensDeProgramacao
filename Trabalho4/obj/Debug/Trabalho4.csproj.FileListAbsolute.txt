@@ -6,3 +6,8 @@ C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\obj\Debug\Traba
 C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\obj\Debug\Trabalho4.Properties.Resources.resources
 C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\obj\Debug\Trabalho4.csproj.GenerateResource.cache
 C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\obj\Debug\Trabalho4.csproj.CoreCompileInputs.cache
+C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\bin\Debug\Trabalho4.exe.config
+C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\bin\Debug\Trabalho4.exe
+C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\bin\Debug\Trabalho4.pdb
+C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\obj\Debug\Trabalho4.exe
+C:\Users\vinic\Desktop\Trabalho4LiguagensDeProgramacao\Trabalho4\obj\Debug\Trabalho4.pdb

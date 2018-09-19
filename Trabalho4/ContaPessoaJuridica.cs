@@ -16,17 +16,28 @@ namespace Trabalho4
 
         public bool depositar(float valorDoDeposito)
         {
-            throw new NotImplementedException();
+            base.saldo += valorDoDeposito;
+            return true;
         }
 
         public float empresta(float valorEmprestimo)
         {
-            throw new NotImplementedException();
+            return valorEmprestimo + (valorEmprestimo * 0.1f);
         }
 
         public bool sacar(float valorDoSaque, out float taxaDoSaque)
         {
-            throw new NotImplementedException();
+            taxaDoSaque = 0;
+            if (valorDoSaque < base.saldo)
+            {
+                return false;
+            }
+            else
+            {
+                taxaDoSaque = valorDoSaque * 0.05f;
+                base.saldo -= valorDoSaque + taxaDoSaque;
+                return true;
+            }
         }
     }
 }

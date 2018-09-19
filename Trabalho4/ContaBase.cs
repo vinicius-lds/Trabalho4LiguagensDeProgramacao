@@ -9,7 +9,7 @@ namespace Trabalho4
     class ContaBase
     {
         private Pessoa pessoa { get; }
-        private float saldo { get; }
+        protected float saldo { get; set; }
         public static int numeroConta { get; set;}
 
         public ContaBase(String nome, DateTime dataNascimento)
