@@ -8,15 +8,14 @@ namespace Trabalho4
 {
     class Banco
     {
-        private List<ContaBase> contas { get; }
-        public static int index = 0;
+        private List<ContaBase> contas = new List<ContaBase>();
 
         public int addConta(String nome, DateTime dataNascimento)
         {
             ContaBase.numeroConta += 1;
-            this.contas.Insert(ContaBase.numeroConta, new ContaPessoaJuridica(nome, dataNascimento));
+            this.contas.Add(new ContaPessoaJuridica(nome, dataNascimento));
 
-            Console.Write("Criado conta PJ");
+            Console.Write("Criado conta PJ\n");
 
             return ContaBase.numeroConta;
         }
@@ -24,41 +23,71 @@ namespace Trabalho4
         public int addConta(String nome, DateTime dataNascimento, Mes mesConta)
         {
             ContaBase.numeroConta += 1;
-            this.contas.Insert(ContaBase.numeroConta, new ContaPessoaFisica(nome, dataNascimento, mesConta));
+            this.contas.Add(new ContaPessoaFisica(nome, dataNascimento, mesConta));
    
-            Console.Write("Criado conta PF");
+            Console.Write("Criado conta PF\n");
 
             return ContaBase.numeroConta;
         }
 
         public String listarContas()
         {
-            String lista = "Contas: \n";
+            String lista = "Contas Bancarias \n";
             foreach(ContaBase c in this.contas){
-                lista += c.ToString()+"\n";
+                lista += c.ToString() + "\n";
             }
             return lista;
         }
 
         public bool saque(int numeroConta, float valorSaque, out float taxa)
         {
-            taxa = 0;
-            return true;
+            return this.buscarConta(numeroConta).sacar(valorSaque, out taxa);
         }
 
         public bool deposito(int numeroConta, float valor)
         {
-            return true;
+            return this.buscarConta(numeroConta).depositar(valor);
         }
 
         public float totalConta(int numeroConta)
         {
-            return 5f;
+            foreach(ContaBase c in this.contas)
+            {
+                if (c.index == numeroConta)
+                {
+                    return c.saldo;
+                }
+            }
+
+            return 0f;
         }
 
         public float emprestimo(int numeroConta, float valor)
         {
-            return 5f;
+            return this.buscarConta(numeroConta).empresta(valor);
+        }
+
+        private Transacao buscarConta(int numeroConta)
+        {
+            foreach(ContaBase c in this.contas)
+            {
+                if (c.index == numeroConta)
+                {
+                    Transacao t;
+                    try
+                    {
+                        t = (ContaPessoaFisica) c;
+                    }
+                    catch (Exception e)
+                    {
+                        t = (ContaPessoaJuridica) c;
+                    }
+
+                    return t;
+                }
+            }
+
+            return null;
         }
     }
 }

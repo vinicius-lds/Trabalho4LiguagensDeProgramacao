@@ -10,8 +10,18 @@ namespace Trabalho4
     {
         static void Main(string[] args)
         {
-            ContaPessoaJuridica pj = new ContaPessoaJuridica("vinicius", DateTime.Now);
-            System.Console.WriteLine(pj.empresta(100));
+            Banco b = new Banco();
+            System.Console.WriteLine("Conta: " + b.addConta("Carlos", DateTime.Now));
+            System.Console.WriteLine("Conta: " + b.addConta("Maria", DateTime.Now, Mes.MAIO));
+            System.Console.WriteLine("Conta: " + b.addConta("Vinicius", DateTime.Now));
+            System.Console.WriteLine("Conta: " + b.addConta("Ze", DateTime.Now, Mes.DEZEMBRO));
+
+
+            b.deposito(1, 500f);
+            b.deposito(2, 200f);
+            b.deposito(3, 300f);
+            b.deposito(4, 400f);
+            b.deposito(1, 500f);
         }
     }
 }

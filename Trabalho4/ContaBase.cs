@@ -9,17 +9,19 @@ namespace Trabalho4
     class ContaBase
     {
         private Pessoa pessoa { get; }
-        protected float saldo { get; set; }
-        public static int numeroConta { get; set;}
+        public float saldo { get; set; }
+        public static int numeroConta = 0;
+        public int index { get; set; }
 
         public ContaBase(String nome, DateTime dataNascimento)
         {
             this.pessoa = new Pessoa(nome, dataNascimento);
+            this.index = numeroConta;
         }
 
         public override String ToString()
         {
-            return this.pessoa.ToString() + " | Conta: " + numeroConta + " | Saldo: " + this.saldo;
+            return "Conta: " + this.index + this.pessoa.ToString() + " | Saldo: " + this.saldo;
         }
     }
 }
